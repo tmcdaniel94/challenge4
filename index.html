@@ -4,15 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link type="stylesheet" href="./assets/css/style.css" /> -->
   <link type="stylesheet" href="./assets/css/style.css" />
-  <title>Conditional Statements</title>
+  <title>My Blog</title>
 </head>
 
 <body>
-  
-  <!-- <h1 style="text-align:center;">Open the Console to See the Magic ✨! </h1> -->
+    <div id="theme-container">
+        <main>
+            <h1>Blog ✨!</h1>
+            <aside id="left-panel"></aside>
+            <div id="blog-form">
+                <form id="blog-form">
+                    <label for="blog-author">Author</label>
+                    <input type="text" id="blog-author" name="blog-author">
+                    <br>
+                    <label for="blog-title">Title</label>
+                    <input type="text" id="blog-title" name="blog-title">
+                    <br>
+                    <label for="blog-content" >Content:</label>
+                    <textarea id="blog-content" name="blog-content"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
 
-  <script src="./assets/js/script.js"></script>
+                <p id="error-message"></p>
+
+            </div>
+        </main>
+    </div>
+
+
+  <script src="./assets/js/logic.js"></script>
 
 </body>
 </html>

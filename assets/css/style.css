@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, footer {
+    padding: 40px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+}
+
