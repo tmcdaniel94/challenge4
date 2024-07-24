@@ -22,13 +22,11 @@ blogForm.addEventListener('submit', function(event) {
         title: titleEl,
         content: contentEl
     };
-
     // push object into the array 
     blogPost.push(oneBlogPost);
 
     // changes to a string so it can be put into localStorage
     const strBlogPost = JSON.stringify(blogPost);
-
     // save to localStorage
     localStorage.setItem("Blog Post", strBlogPost);
 
