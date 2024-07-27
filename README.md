@@ -6,14 +6,17 @@ I created this blog as my submission for UT's Bootcamp's challenge four project.
 
 ## Credit
 
+Some example code was used to build the dark and light mode switch. The code was pulled from UT Bootcamp's Web API module, the Event Listener section. Our class TA, Walter, also assisted me in the creation of this blog.
+
 ## License
 
 MIT
 
 ## Link to Live Site
 
+https://tmcdaniel94.github.io/challenge4/
 
+## Screenshot of Webpages
 
-## Screenshot of Webpage
-
-![Web APIs Challenge]
+![Web APIs Challenge](./assets/images/blogformpage.png)
+![Blog Posts](./assets/images/blogpostpage.png) 
