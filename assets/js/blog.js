@@ -48,6 +48,7 @@ for (singleBlogPost of javascriptBlogPosts) {
   postElement.classList.add('post-style');
   postElement.innerHTML = `
   <h3>${singleBlogPost.title}</h3>
+  <hr>
   <p><strong>Author:</strong> ${singleBlogPost.author}</p>
   <p>${singleBlogPost.content}</p>
 `;
