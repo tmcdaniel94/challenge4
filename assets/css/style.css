@@ -2,23 +2,82 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     height: 100vh;
+    font-family: 'Merriweather', 'Courier New', serif;
 }
 
 a {
     text-decoration: none;
 }
 
+#theme-container {
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
+    height: 20%;
+    width: 100%;
+    background-color: cadetblue;
 }
 
 header, footer {
     padding: 40px;
+}
+
+h1 {
+    color: white;
+}
+
+hr {
+    border: 1px solid gainsboro;
+    margin-bottom: 15px;
+}
+
+/* --- Blog Form --- */
+
+#blog-form-flexbox {
+    display: flex;
+    width: 100%;
+}
+
+#blog-form {
+    width: 100%;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+label {
+    margin-left: 3%;
+    margin-top: 10px;
+    font-family: 'Merriweather', 'Courier New', serif;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 95%;
+    height: 100px;
+    margin: 1% 1% 1% 3%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+button {
+    margin: 0 0 0 3%;
 }
 
 footer {
