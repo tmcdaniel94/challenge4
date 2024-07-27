@@ -5,36 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/blog.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
   <title>My Blog</title>
 </head>
 
 <body>
     <div class="container dark">
-    <div>
         <header>
+            <nav id="navbar">
             <h1>✨ My Blog ✨</h1>
 
-            <div class="row toggle">
-                <div class="col">
-                  <p>DARK MODE</p>
+            <div class="navbtns">
+                <button type="button" id="btnBack"><a href="./index.html">Back</a></button>
+            <!-- theme switcher -->
+                <div class="switchdiv">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switcher">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
-                <label class="switch col">
-                    <input type="checkbox" id="theme-switcher">
-                    <span class="slider round"></span>
-                </label>
-                <div class="col">
-                    <p>LIGHT MODE</p>
-                </div>
+            <!-- theme switcher -->
             </div>
-
-            <button type="button" id="btnBack">Back</button>
             
-            
+            </nav>
         </header>
-    </div>
+        <hr>
+
 
     <main>
-        <div id="all-posts"></div>
+        <h2>My Blog Posts</h2>
+        <p></p>
+        <div id="all-posts">
+            
+        </div>
     </main>
 
     <footer>
@@ -47,6 +50,7 @@
 
 
   <script src="./assets/js/blog.js"></script>
+  <script src="./assets/js/logic.js"></script>
 </div>
 </body>
 </html>

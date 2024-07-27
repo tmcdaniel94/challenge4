@@ -1,4 +1,3 @@
-// applyTheme, handleThemeToggle, and readLocalStorage
 const blogForm = document.querySelector('#blog-form');
 
 blogForm.addEventListener('submit', function(event) {
@@ -16,20 +15,30 @@ blogForm.addEventListener('submit', function(event) {
     };
 
     // declare the array
-    const blogPost = [];
     const oneBlogPost = {
         author: authorEl,
         title: titleEl,
         content: contentEl
     };
-    // push object into the array 
-    blogPost.push(oneBlogPost);
 
-    // changes to a string so it can be put into localStorage
-    const strBlogPost = JSON.stringify(blogPost);
+    // retrieves from localStorage
+    let oldBlogPosts = localStorage.getItem("Blog Post") || "[]";
+    // reverts back to object
+    let changedbacktojs = JSON.parse(oldBlogPosts);
+    // push object into the array 
+    changedbacktojs.push(oneBlogPost);
+        // changes to a string so it can be put into localStorage
+        const strBlogPost = JSON.stringify(changedbacktojs);
+
     // save to localStorage
     localStorage.setItem("Blog Post", strBlogPost);
+
+
+ 
+
 
     // redirect to the blog page
     window.location.href = "blog.html";
 });
+
+console.log(blogForm, "this is hte blog form");

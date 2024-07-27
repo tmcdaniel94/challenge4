@@ -15,34 +15,57 @@ a {
 header {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    height: 20%;
 }
 
 header, footer {
     padding: 40px;
+    align-content: center;
 }
 
 footer {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
-h1 {
-    color: aquamarine;
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ h1 {
     font-size: 200%;
+    margin-top: 3px;
 }
 
-p {
+/* p {
   font-size: 50%;
   color: aqua;
+} */
+
+#btnBack {
+  height: 30px;
+  width: auto;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 10px;
 }
 
+/* --- Light/Dark Mode Switch --- */
 
-.toggle {
-    border-style: outset;
-    width: 400px;
-    background-color: rgba(76, 175, 80, 0.15)
-  }
-  
+.switchdiv {
+  margin: 5%;
+}
+
   /* Dark Mode */
   .dark {
     background-color:#243447;
@@ -64,6 +87,7 @@ p {
     display: inline-block;
     width: 60px;
     height: 34px;
+    justify-content: right;
   }
   
   /* Hide default HTML checkbox */
@@ -120,11 +144,19 @@ p {
   .slider.round:before {
     border-radius: 50%;
   }
-  
-  .row {
-    margin: 20px;
-    display: flex;
-  }
+
   .col {
     margin: 20px;
+  }
+
+  /* --- Main Posts --- */
+
+  #all-posts {
+    display: flex;
+    width: 100%;
+    align-items: block;
+  }
+
+  .post-style {
+    background-color: blue;
   }
